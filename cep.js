@@ -36,7 +36,7 @@ function verifica(){
         desabilitar
         limpar();
         espera = setInterval(esperar, 20);
-        var myCep = "http://viacep.com.br/ws/" + lido + "/json"
+        var myCep = "http://viacep.com.br/ws/" + lido + "/json/"
         buscaCep(myCep);
     } else {
         limpar();
@@ -74,3 +74,4 @@ function habilitar(){
     document.getElementById("cidade").disabled = false;
     document.getElementById("estado").disabled = false;
 }
+
