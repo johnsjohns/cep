@@ -36,7 +36,7 @@ function verifica(){
         desabilitar
         limpar();
         espera = setInterval(esperar, 20);
-        var myCep = "http://viacep.com.br/ws/" + lido + "/json/"
+        var myCep = "https://viacep.com.br/ws/" + lido + "/json/"
         buscaCep(myCep);
     } else {
         limpar();
