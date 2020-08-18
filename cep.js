@@ -6,12 +6,10 @@ function buscaCep(cep){
         if (this.readyState == 4 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
             mostrar(myArr);
-            
         }
     };
     request.open('GET', cep);
     request.send();    
-  
 }
 
 function mostrar(arr){
@@ -25,7 +23,6 @@ function mostrar(arr){
     } else {
         limpar();
     }
-
 }
 
 function verifica(){
@@ -74,4 +71,3 @@ function habilitar(){
     document.getElementById("cidade").disabled = false;
     document.getElementById("estado").disabled = false;
 }
-
